@@ -5,6 +5,14 @@
 import React, {Component} from 'react';
 
 export default class Home extends Component {
+  componentDidMount(){
+    SC.initialize({
+      client_id: 'ebe2d1362a92fc057ac484fcfb265049'
+    });
+    SC.get('/tracks/336768726').then(function(response) {
+        console.log(response);
+    });
+  }
   render() {
   	/*
 		Html within this render method every time
