@@ -33,10 +33,10 @@ describe('Home', () => {
 			expect($h1Txt).toBe("Hello World & Hello Puppy");
 		});
 		it('should render an alert on click', () => {
-			const click = jest.fn();
+			window.alert = jest.fn();
 			const home = mount(<h1 onClick={alert("hello")}/>);
 			home.find('h1').simulate('click');
-			expect(click).toBeCalledWith(window.alert);
+			expect(window.alert).toBeCalledWith('hello');
 		});
 	});
 });
