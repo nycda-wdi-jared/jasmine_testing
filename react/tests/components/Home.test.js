@@ -34,9 +34,9 @@ describe('Home', () => {
 		});
 		it('should render an alert on click', () => {
 			const click = jest.fn();
-			const home = mount(<h1 onClick={click("hello")}/>);
+			const home = mount(<h1 onClick={alert("hello")}/>);
 			home.find('h1').simulate('click');
-			expect(click).toBeCalledWith('hello');
+			expect(click).toBeCalledWith(window.alert);
 		});
 	});
 });
