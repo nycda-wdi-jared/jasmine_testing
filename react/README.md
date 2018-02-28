@@ -4,5 +4,6 @@
 * Using jest/enzyme with react:
 	* https://medium.com/wehkamp-techblog/unit-testing-your-react-application-with-jest-and-enzyme-81c5545cee45
 	* https://www.sitepoint.com/test-react-components-jest/
+	* https://medium.com/@newyork.anthonyng/testing-react-components-state-b57bfc712b90
 * Using Enzyme: https://github.com/airbnb/enzyme
 * Using TestUtils: https://reactjs.org/docs/test-utils.html

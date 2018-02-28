@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1519585825304" clover="3.2.0">
-  <project timestamp="1519585825304" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="4" coveredelements="4" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1">
-      <file name="Home.js" path="/Users/jaredthomas/Desktop/class/code_testing/react/app/components/Home.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+<coverage generated="1519796860592" clover="3.2.0">
+  <project timestamp="1519796860593" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7" elements="17" coveredelements="17" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1">
+      <file name="Home.js" path="/Users/jaredthomas/Desktop/class/testing/react/app/components/Home.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="28" count="12" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
       </file>
     </metrics>
   </project>
