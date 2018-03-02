@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var pg = require('pg');
+var messages = require('./tests/db/messages.js');
 
 var path = require("path");
 

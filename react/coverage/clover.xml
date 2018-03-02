@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1519796860592" clover="3.2.0">
-  <project timestamp="1519796860593" name="All files">
-    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7" elements="17" coveredelements="17" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1">
-      <file name="Home.js" path="/Users/jaredthomas/Desktop/class/testing/react/app/components/Home.js">
+<coverage generated="1519949292986" clover="3.2.0">
+  <project timestamp="1519949292986" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8" elements="21" coveredelements="21" complexity="0" loc="11" ncloc="11" packages="2" files="2" classes="2">
+      <package name="app.components">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
-        <line num="9" count="10" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="25" count="10" type="stmt"/>
-        <line num="28" count="12" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
-      </file>
+        <file name="Home.js" path="/Users/jaredthomas/Desktop/class/testing/react/app/components/Home.js">
+          <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+          <line num="9" count="10" type="stmt"/>
+          <line num="10" count="10" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+          <line num="21" count="2" type="stmt"/>
+          <line num="25" count="10" type="stmt"/>
+          <line num="28" count="12" type="stmt"/>
+          <line num="30" count="1" type="stmt"/>
+          <line num="34" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="tests.db">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="messages.js" path="/Users/jaredthomas/Desktop/class/testing/react/tests/db/messages.js">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+        </file>
+      </package>
     </metrics>
   </project>
 </coverage>

@@ -7,6 +7,7 @@ import { renderIntoDocument, Simulate } from 'react-dom/test-utils';
 import fetch from 'isomorphic-fetch';
 import sinon from 'sinon';
 import pg from 'pg';
+import messages from './../db/messages.js';
 
 import Home from './../../app/components/Home';
 
@@ -55,12 +56,16 @@ describe('Home', () => {
 	});
 	describe('results state', () => {
 		it('should be accurate to what is in the db', async () => {
-			pgClient.query('SELECT * FROM "Guestbooks"', (err, result) => {
-				jest.spyOn(window, 'fetch').mockImplementation(() => Promise.resolve(result.rows));;
-				const wrapper = shallow(<Home/>);
-				return wrapper.instance().fetchStuff().then(() => { // We hook into the end of the promise chain
-					expect(wrapper.state().results.length).toEqual(5);
-				});
+			// pgClient.query('SELECT * FROM "Guestbooks"', (err, result) => {
+			// 	jest.spyOn(window, 'fetch').mockImplementation(() => Promise.resolve(result.rows));;
+			// 	const wrapper = shallow(<Home/>);
+			// 	return wrapper.instance().fetchStuff().then(() => { // We hook into the end of the promise chain
+			// 		expect(wrapper.state().results.length).toEqual(4);
+			// 	});
+			// 	pgClient.end();
+			// });
+			return messages().then((res) => {
+				expect(res.length).toBe(5);
 			});
 		});
 		it('should mount to the page through componentWillMount', () => {
