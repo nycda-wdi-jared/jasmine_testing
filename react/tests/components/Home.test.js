@@ -51,14 +51,14 @@ describe('Home', () => {
 		it('should mount to the page through componentWillMount', () => {
 			jest.spyOn(window, 'fetch').mockImplementation(() => Promise.resolve(['balls', 'socks', 'rocks']));;
 			const wrapper = shallow(<Home/>);
-			return wrapper.instance().fetchStuff().then(() => { // We hook into the end of the promise chain
+			return wrapper.instance().fetchStuff().then(() => {
 				expect(wrapper.state().results.length).toEqual(3);
 			});	
 		})
 		it('should mount nothing if undefined', () => {
 			jest.spyOn(window, 'fetch').mockImplementation(() => Promise.resolve(undefined));;
 			const wrapper = shallow(<Home/>);
-			return wrapper.instance().fetchStuff().then(() => { // We hook into the end of the promise chain
+			return wrapper.instance().fetchStuff().then(() => {
 				expect(wrapper.state().results).toBe(undefined);
 			});	
 		})
