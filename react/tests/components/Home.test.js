@@ -5,7 +5,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import $ from 'jquery';
 import { renderIntoDocument, Simulate } from 'react-dom/test-utils';
 import fetch from 'isomorphic-fetch';
-import pg from 'pg';
 
 import messages from './../db/messages.js';
 
@@ -16,20 +15,9 @@ Enzyme.configure({ adapter: new Adapter() });
 describe('Home', () => {
 	var home;
 	var $el;
-	var dbUrl;
-	var pgClient;
 	beforeEach(function() {
 		home = renderIntoDocument(<Home/>);
 		$el = $(findDOMNode(home));
-		dbUrl = {
-			user: 'jaredthomas',
-			password: '',
-			database: 'guestbook',
-			host: 'localhost',
-			port: 5432
-		};
-		pgClient = new pg.Client(dbUrl);
-		pgClient.connect();
 	});
 
 	it('should exist', () => {
