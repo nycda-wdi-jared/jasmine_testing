@@ -9,4 +9,6 @@
 	* https://stackoverflow.com/questions/41598559/how-to-spy-componentwillmount-using-jest-and-enzyme
 * Using Enzyme: https://github.com/airbnb/enzyme
 * Using TestUtils: https://reactjs.org/docs/test-utils.html
-* PgClient: https://github.com/facebook/jest/issues/3686
+* PgClient: 
+	* https://github.com/facebook/jest/issues/3686
+	* https://www.npmjs.com/package/knex
