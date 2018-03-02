@@ -5,8 +5,8 @@ import Adapter from 'enzyme-adapter-react-16';
 import $ from 'jquery';
 import { renderIntoDocument, Simulate } from 'react-dom/test-utils';
 import fetch from 'isomorphic-fetch';
-import sinon from 'sinon';
 import pg from 'pg';
+
 import messages from './../db/messages.js';
 
 import Home from './../../app/components/Home';
